@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb+srv://edwer:edwer@cluster0.cxy6h.mongodb.net/test
