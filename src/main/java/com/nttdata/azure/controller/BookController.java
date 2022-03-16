@@ -25,6 +25,10 @@ public class BookController {
         this.bookService = bookService;
     }
 
+    @GetMapping(value = "/hola")
+    public String getMessage() {
+    	return "hola";
+    }
 
     @GetMapping(value = "/", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Book> getAllBook(){
